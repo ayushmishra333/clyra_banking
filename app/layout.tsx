@@ -12,6 +12,9 @@ const ibmPlexSerif = IBM_Plex_Serif ({
 export const metadata: Metadata = {
   title: "Clyra",
   description: "Your innovative and secure banking platform for seamless financial management.",
+  icons: {
+    icon: '/icon/logo.svg'
+  }
 };
 
 export default function RootLayout({
