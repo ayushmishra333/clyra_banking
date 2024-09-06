@@ -10,26 +10,27 @@ const Home = async () => {
     <section className="home">
       <div className="home-content">
         <header className="home-header">
-          <HeaderBox
+          <HeaderBox 
             type="greeting"
             title="Welcome"
             user={loggedIn?.name || 'Guest'}
             subtext="Access and manage your account and transactions efficiently."
           />
 
-          <TotalBalanceBox
-            accounts = {[]}
+          <TotalBalanceBox 
+            accounts={[]}
             totalBanks={1}
-            totalCurrentBalance={1327.47}
+            totalCurrentBalance={1250.35}
           />
         </header>
+
         RECENT TRANSACTIONS
       </div>
 
-      <RightSidebar
+      <RightSidebar 
         user={loggedIn}
         transactions={[]}
-        banks={[{currentBalance: 123.50}, {currentBalance: 345.98}]}
+        banks={[{ currentBalance: 123.50 }, { currentBalance: 500.50}]}
       />
     </section>
   )
